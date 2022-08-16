@@ -4,7 +4,7 @@ plugins {
     id 'kotlin-kapt'
     id "androidx.navigation.safeargs.kotlin"
     id 'dagger.hilt.android.plugin'
-    id 'kotlin-android-extensions'
+    id 'kotlin-parcelize'
 }
 
 android {
@@ -22,7 +22,11 @@ android {
     }
 
     buildTypes {
+        debug {
+            buildConfigField "String", "API_URL", "\"https://url/pre/\""
+        }
         release {
+            buildConfigField "String", "API_URL", "\"https://url/pro/\""
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
@@ -61,8 +65,8 @@ dependencies {
     implementation "com.squareup.okhttp3:logging-interceptor:4.9.1"
 
     //Lifecycle
-    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.0'
-    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.4.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.5.1'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.5.1'
 
     //Size views
     implementation 'com.intuit.sdp:sdp-android:1.0.6'
@@ -74,9 +78,9 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0"
 
     //Room
-    implementation "androidx.room:room-runtime:2.3.0"
-    implementation "androidx.room:room-ktx:2.3.0"
-    kapt "androidx.room:room-compiler:2.3.0"
+    implementation "androidx.room:room-runtime:2.4.3"
+//    implementation "androidx.room:room-ktx:2.3.0"
+    kapt "androidx.room:room-compiler:2.4.3"
 
 
     //Activity and fragment
@@ -89,11 +93,13 @@ dependencies {
 
 
     //Dagger Hilt
-    implementation "com.google.dagger:hilt-android:2.35"
-    kapt "com.google.dagger:hilt-android-compiler:2.35"
+    implementation "com.google.dagger:hilt-android:2.38.1"
     implementation "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03"
-    kapt "androidx.hilt:hilt-compiler:1.0.0"
     annotationProcessor "com.google.dagger:dagger-android-processor:2.37"
+    implementation 'com.google.dagger:dagger:2.38.1'
+    kapt 'com.google.dagger:dagger-compiler:2.38.1'
+    kapt "com.google.dagger:hilt-android-compiler:2.38.1"
+    kapt "androidx.hilt:hilt-compiler:1.0.0"
 
     //Coil
     implementation("io.coil-kt:coil:1.3.2")
@@ -121,11 +127,6 @@ dependencies {
 
     implementation 'com.github.Kunzisoft:Android-SwitchDateTimePicker:2.1'
 
-    //pdfViewer
-    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
-
-    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
-
     //lib
     implementation fileTree(include: ['*.jar'], dir: 'libs')
 
@@ -134,4 +135,7 @@ dependencies {
 
     //Splash
     implementation 'androidx.core:core-splashscreen:1.0.0-rc01'
+
+    //phone number picker
+    implementation 'com.hbb20:ccp:2.4.7'
 }

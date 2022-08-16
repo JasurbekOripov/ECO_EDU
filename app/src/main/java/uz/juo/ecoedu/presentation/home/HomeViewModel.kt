@@ -1,4 +1,4 @@
-package uz.juo.ecoedu.ui.home
+package uz.juo.ecoedu.presentation.home
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -10,4 +10,8 @@ class HomeViewModel : ViewModel() {
         value = "This is home Fragment"
     }
     val text: LiveData<String> = _text
+
+
+
 }
+

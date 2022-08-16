@@ -1,14 +1,179 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.start.sign_up.SignUpFragment">
+    android:layout_height="wrap_content"
+    tools:context=".presentation.start.sign_up.SignUpFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:background="@color/back_grey_color"
+        android:padding="@dimen/_15sdp">
 
-</FrameLayout>
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ro'yxatdan o'tish"
+            android:textColor="#1F1F39"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.03" />
+
+        <TextView
+            android:id="@+id/fio_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="F.I.O"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintBottom_toTopOf="@id/et_fio"
+            app:layout_constraintTop_toBottomOf="@id/tv1" />
+
+        <EditText
+            android:id="@+id/et_fio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/linear_back"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="@dimen/_10sdp"
+            app:layout_constraintBottom_toTopOf="@id/region_tv"
+            app:layout_constraintTop_toBottomOf="@id/fio_tv" />
+
+        <TextView
+            android:id="@+id/region_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Hudud, tuman"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintBottom_toTopOf="@id/et_region"
+            app:layout_constraintTop_toBottomOf="@id/et_fio" />
+
+        <EditText
+            android:id="@+id/et_region"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/linear_back"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="@dimen/_10sdp"
+            app:layout_constraintBottom_toTopOf="@id/district_tv"
+            app:layout_constraintTop_toBottomOf="@id/region_tv" />
+
+        <TextView
+            android:id="@+id/district_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Hudud, tuman"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintBottom_toTopOf="@id/et_district"
+            app:layout_constraintTop_toBottomOf="@id/et_region" />
+
+        <EditText
+            android:id="@+id/et_district"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/linear_back"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="@dimen/_10sdp"
+            app:layout_constraintBottom_toTopOf="@id/age_tv"
+            app:layout_constraintTop_toBottomOf="@id/district_tv" />
+
+        <TextView
+            android:id="@+id/age_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Yoshingizni kiriting"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintBottom_toTopOf="@id/et_age"
+            app:layout_constraintTop_toBottomOf="@id/et_district" />
+
+        <EditText
+            android:id="@+id/et_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/linear_back"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="@dimen/_10sdp"
+            app:layout_constraintBottom_toTopOf="@id/school_tv"
+            app:layout_constraintTop_toBottomOf="@id/age_tv" />
+
+        <TextView
+            android:id="@+id/school_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Maktabingizni kiriting"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintBottom_toTopOf="@id/et_school"
+            app:layout_constraintTop_toBottomOf="@id/et_age" />
+
+        <EditText
+            android:id="@+id/et_school"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/linear_back"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="@dimen/_10sdp"
+            app:layout_constraintBottom_toTopOf="@id/save_btn"
+            app:layout_constraintTop_toBottomOf="@id/school_tv" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/save_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:cardCornerRadius="@dimen/_5sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_school">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#3D5CFF"
+                android:gravity="center"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_12sdp"
+                android:text="Ro'yxatdan o'tish"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/sing_in_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:text="Ro'yxatdan o'tganmisiz ?"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_9sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/save_btn" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

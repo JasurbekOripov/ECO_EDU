@@ -1,4 +1,4 @@
-package uz.juo.ecoedu.ui.home
+package uz.juo.ecoedu.presentation.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -19,8 +19,7 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val homeViewModel =
-            ViewModelProvider(this).get(HomeViewModel::class.java)
+        val homeViewModel = ViewModelProvider(this)[HomeViewModel::class.java]
 
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root

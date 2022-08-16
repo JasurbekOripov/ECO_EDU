@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="enter_number" >Tasdiqlash kodini yuborish uchun telefon raqamingizni kiriting</string>
+    <string name="menu_main">Asosiy</string>
+    <string name="menu_article">Maqolalar</string>
+    <string name="menu_quiz">Tezkor savollar</string>
+    <string name="menu_rating">Natijalar</string>
+    <string name="enter">Kirish</string>
+    <string name="send">Yuborish</string>
+</resources>

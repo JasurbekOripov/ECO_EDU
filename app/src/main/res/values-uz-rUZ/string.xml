@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="enter_number" >Тасдиқлаш кодини юбориш учун telefon рақамингизни киритинг</string>
+    <string name="menu_main">Асосий</string>
+    <string name="menu_article">Мақолалар</string>
+    <string name="menu_quiz">Тест</string>
+    <string name="menu_rating">Натижалар</string>
+    <string name="send">Юбориш</string>
+    <string name="enter">Кириш</string>
+</resources>

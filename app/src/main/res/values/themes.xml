@@ -11,6 +11,7 @@
 
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
+        <item name="fontFamily">@font/roboto_regular</item>
         <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
@@ -18,6 +19,7 @@
     <style name="Theme.App.Starting" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">#FFFFFF</item>
         <item name="windowSplashScreenAnimatedIcon">@mipmap/app_logo</item>
+        <item name="fontFamily">@font/roboto_regular</item>
         <item name="postSplashScreenTheme">@style/Theme.ECOEDU</item>
     </style>
     <style name="Theme.ECOEDU.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
