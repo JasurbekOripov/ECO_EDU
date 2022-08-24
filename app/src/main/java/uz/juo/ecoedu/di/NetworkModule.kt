@@ -1,4 +1,4 @@
-package uz.juo.ecoedu.data.common.module
+package uz.juo.ecoedu.di
 
 import android.content.Context
 import com.chuckerteam.chucker.api.ChuckerInterceptor
@@ -41,7 +41,7 @@ object NetworkModule {
 
     @Provides
     @Singleton
-    fun provideOkHttpClient(@ApplicationContext context: Context,authInterceptor: AuthInterceptor,tokenInterceptro: TokenInterceptor): OkHttpClient =
+    fun provideOkHttpClient(@ApplicationContext context: Context, authInterceptor: AuthInterceptor, tokenInterceptro: TokenInterceptor): OkHttpClient =
         OkHttpClient.Builder().also { client ->
             val logging = HttpLoggingInterceptor()
             logging.setLevel(HttpLoggingInterceptor.Level.BODY)

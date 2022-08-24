@@ -9,3 +9,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "ECO EDU"
 include ':app'
+include ':data'
+include ':domain'

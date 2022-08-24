@@ -1,4 +1,4 @@
-package uz.juo.ecoedu.presentation.start.code_check
+package uz.juo.ecoedu.presentation.register.code_check
 
 import android.os.Bundle
 import android.os.CountDownTimer
@@ -7,9 +7,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import dagger.hilt.android.AndroidEntryPoint
 import uz.juo.ecoedu.R
 import uz.juo.ecoedu.databinding.FragmentCodeCheckBinding
 
+@AndroidEntryPoint
 class CodeCheckFragment : Fragment() {
     lateinit var binding: FragmentCodeCheckBinding
     lateinit var timer: CountDownTimer

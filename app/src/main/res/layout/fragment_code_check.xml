@@ -6,7 +6,7 @@
     android:background="@color/back_grey_color"
     android:layout_height="match_parent"
     android:padding="@dimen/_15sdp"
-    tools:context=".presentation.start.code_check.CodeCheckFragment">
+    tools:context=".presentation.register.code_check.CodeCheckFragment">
 
     <TextView
         android:id="@+id/tv1"

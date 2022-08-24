@@ -1,4 +1,4 @@
-package uz.juo.ecoedu.presentation.start.sign_up
+package uz.juo.ecoedu.presentation.register.sign_up
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,9 +7,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import dagger.hilt.android.AndroidEntryPoint
 import uz.juo.ecoedu.databinding.FragmentSignUpBinding
 import uz.juo.ecoedu.presentation.home.MainActivity
 
+@AndroidEntryPoint
 class SignUpFragment : Fragment() {
     lateinit var binding: FragmentSignUpBinding
 

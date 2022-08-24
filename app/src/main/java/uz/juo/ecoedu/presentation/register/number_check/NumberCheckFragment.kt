@@ -1,4 +1,4 @@
-package uz.juo.ecoedu.presentation.start.number_check
+package uz.juo.ecoedu.presentation.register.number_check
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,11 +6,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.google.android.material.snackbar.Snackbar
+import dagger.hilt.android.AndroidEntryPoint
 import uz.juo.ecoedu.R
 import uz.juo.ecoedu.databinding.FragmentNumberCheckBinding
 
 
+@AndroidEntryPoint
 class NumberCheckFragment : Fragment() {
     lateinit var binding: FragmentNumberCheckBinding
     override fun onCreateView(

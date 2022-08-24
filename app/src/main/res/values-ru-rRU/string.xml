@@ -5,6 +5,8 @@
     <string name="menu_article">Статьи</string>
     <string name="menu_quiz">Тест</string>
     <string name="menu_rating">Результаты</string>
+    <string name="menu_about">О нас</string>
+    <string name="menu_logout">Выход</string>
     <string name="phone_number">+998-12-345-67-89</string>
     <string name="enter">Входъ</string>
     <string name="send">Отправить</string>

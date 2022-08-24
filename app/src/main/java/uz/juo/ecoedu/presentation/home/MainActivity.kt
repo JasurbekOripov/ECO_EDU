@@ -14,9 +14,10 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
+import dagger.hilt.android.AndroidEntryPoint
 import uz.juo.ecoedu.R
 import uz.juo.ecoedu.databinding.ActivityMainBinding
-
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() , NavigationView.OnNavigationItemSelectedListener {
 
     private lateinit var appBarConfiguration: AppBarConfiguration

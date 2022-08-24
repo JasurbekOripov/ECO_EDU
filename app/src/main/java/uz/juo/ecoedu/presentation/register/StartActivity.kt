@@ -1,13 +1,15 @@
-package uz.juo.ecoedu.presentation.start
+package uz.juo.ecoedu.presentation.register
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.navigation.findNavController
+import dagger.hilt.android.AndroidEntryPoint
 import uz.juo.ecoedu.R
 import uz.juo.ecoedu.databinding.ActivityStartBinding
 
 
+@AndroidEntryPoint
 class StartActivity : AppCompatActivity() {
     private lateinit var binding: ActivityStartBinding
 
