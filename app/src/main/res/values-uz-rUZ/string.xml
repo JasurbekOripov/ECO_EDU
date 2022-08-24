@@ -5,6 +5,8 @@
     <string name="menu_article">Мақолалар</string>
     <string name="menu_quiz">Тест</string>
     <string name="menu_rating">Натижалар</string>
+    <string name="menu_about">Биз ҳаккимизда</string>
+    <string name="menu_logout">Чиқиш</string>
     <string name="send">Юбориш</string>
     <string name="enter">Кириш</string>
 </resources>

@@ -6,18 +6,13 @@
     app:startDestination="@id/numberCheckFragment">
 
     <fragment
-        android:id="@+id/signInFragment"
-        android:name="uz.juo.ecoedu.presentation.start.sign_in.SignInFragment"
-        android:label="fragment_sign_in"
-        tools:layout="@layout/fragment_sign_in" />
-    <fragment
         android:id="@+id/signUpFragment"
-        android:name="uz.juo.ecoedu.presentation.start.sign_up.SignUpFragment"
+        android:name="uz.juo.ecoedu.presentation.register.sign_up.SignUpFragment"
         android:label="fragment_sign_up"
         tools:layout="@layout/fragment_sign_up" />
     <fragment
         android:id="@+id/numberCheckFragment"
-        android:name="uz.juo.ecoedu.presentation.start.number_check.NumberCheckFragment"
+        android:name="uz.juo.ecoedu.presentation.register.number_check.NumberCheckFragment"
         android:label="fragment_number_check"
         tools:layout="@layout/fragment_number_check" >
         <action
@@ -26,12 +21,9 @@
     </fragment>
     <fragment
         android:id="@+id/codeCheckFragment"
-        android:name="uz.juo.ecoedu.presentation.start.code_check.CodeCheckFragment"
+        android:name="uz.juo.ecoedu.presentation.register.code_check.CodeCheckFragment"
         android:label="fragment_code_check"
         tools:layout="@layout/fragment_code_check" >
-        <action
-            android:id="@+id/action_codeCheckFragment_to_signInFragment"
-            app:destination="@id/signInFragment" />
         <action
             android:id="@+id/action_codeCheckFragment_to_signUpFragment"
             app:destination="@id/signUpFragment" />

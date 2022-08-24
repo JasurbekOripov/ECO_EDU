@@ -7,6 +7,8 @@
     <string name="menu_article">Maqolalar</string>
     <string name="menu_quiz">Tezkor savollar</string>
     <string name="menu_rating">Natijalar</string>
+    <string name="menu_about">Biz haqimizda</string>
+    <string name="menu_logout">Chiqish</string>
     <string name="phone_number" translatable="false">+998-12-345-67-89</string>
     <string name="enter_number">Tasdiqlash kodini yuborish uchun telefon raqamingizni kiriting</string>
     <string name="send">Yuborish</string>

@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/fizmasoft/ECOEDU/app/src/main/res/drawable/app_logo_foreground.xml" value="0.192" />
         <entry key="..\:/fizmasoft/ECOEDU/app/src/main/res/drawable/ic_main_logo.xml" value="0.2" />
         <entry key="..\:/fizmasoft/ECOEDU/app/src/main/res/drawable/ic_start_img1.xml" value="0.192" />
         <entry key="..\:/fizmasoft/ECOEDU/app/src/main/res/drawable/linear_back.xml" value="0.192" />
@@ -14,10 +15,10 @@
         <entry key="..\:/fizmasoft/ECOEDU/app/src/main/res/layout/app_bar_main.xml" value="0.22" />
         <entry key="..\:/fizmasoft/ECOEDU/app/src/main/res/layout/content_main.xml" value="0.3625" />
         <entry key="..\:/fizmasoft/ECOEDU/app/src/main/res/layout/drawer_menu.xml" value="0.25" />
-        <entry key="..\:/fizmasoft/ECOEDU/app/src/main/res/layout/fragment_code_check.xml" value="0.4604904632152589" />
+        <entry key="..\:/fizmasoft/ECOEDU/app/src/main/res/layout/fragment_code_check.xml" value="0.25" />
         <entry key="..\:/fizmasoft/ECOEDU/app/src/main/res/layout/fragment_gallery.xml" value="0.3625" />
         <entry key="..\:/fizmasoft/ECOEDU/app/src/main/res/layout/fragment_home.xml" value="0.18802083333333333" />
-        <entry key="..\:/fizmasoft/ECOEDU/app/src/main/res/layout/fragment_number_check.xml" value="0.18" />
+        <entry key="..\:/fizmasoft/ECOEDU/app/src/main/res/layout/fragment_number_check.xml" value="0.25" />
         <entry key="..\:/fizmasoft/ECOEDU/app/src/main/res/layout/fragment_sign_in.xml" value="0.18" />
         <entry key="..\:/fizmasoft/ECOEDU/app/src/main/res/layout/fragment_sign_up.xml" value="0.33" />
         <entry key="..\:/fizmasoft/ECOEDU/app/src/main/res/layout/fragment_slideshow.xml" value="0.3625" />
